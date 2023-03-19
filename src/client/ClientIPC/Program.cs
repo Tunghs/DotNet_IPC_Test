@@ -14,7 +14,7 @@ namespace ClientIPC
         [SecurityPermission(SecurityAction.Demand)]
         static void Main(string[] args)
         {
-            RemoteObject.CreateServer();
+            RemoteObject.CreateClient();
             RemoteObject ro = new RemoteObject();
             int nCount = 0;// IPC와 비교를 위한 숫자 변수 
             string sStr = "";// IPC와 비교를 위한 문자 변수
